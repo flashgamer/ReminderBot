@@ -7,7 +7,7 @@ tweets at the user at the given time reminding them of the event."""
 #imports
 import tweepy
 from secret import *
-from wordnik import *
+#from wordnik import *
 
 
 #Information about the app
@@ -19,7 +19,7 @@ __email__ = "jjiang85@gatech.edu"
 __status__ = "Development"
 
 auth = tweepy.OAuthHandler(C_KEY, C_SECRET)
-auth.set_access.token(A_TOKEN, A_TOKEN_SECRET)
+auth.set_access_token(A_TOKEN, A_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 ##wordnikUrl = 'http://api.wordnik.com/v4'
