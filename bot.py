@@ -27,5 +27,7 @@ api = tweepy.API(auth)
 ##client = swagger.ApiClient(wordnikAPI, wordnikUrl)
 
 tweet = "Test tweet"
-
-api.update_status(tweet)
+user = input("What is your Twitter handle? ")
+message = input("What do you want me to remind you of? ")
+api.send_direct_message(user, text = message)
+#api.update_status(tweet)
